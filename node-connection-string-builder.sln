@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F48CDB0C-A733-4163-8884-DCAA07CF69BF}") = "node-connection-string-builder", "node-connection-string-builder.njsproj", "{9BFD5A71-D8A5-4905-BA7F-CBD85223DC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BFD5A71-D8A5-4905-BA7F-CBD85223DC58}.Debug|x86.ActiveCfg = Debug|x86
+		{9BFD5A71-D8A5-4905-BA7F-CBD85223DC58}.Debug|x86.Build.0 = Debug|x86
+		{9BFD5A71-D8A5-4905-BA7F-CBD85223DC58}.Release|x86.ActiveCfg = Release|x86
+		{9BFD5A71-D8A5-4905-BA7F-CBD85223DC58}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

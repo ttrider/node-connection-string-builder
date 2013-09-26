@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>9bfd5a71-d8a5-4905-ba7f-cbd85223dc58</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <StartupFile>test/tests.js</StartupFile>
+    <ProjectTypeGuids>{262852C6-CD72-467D-83FE-5EEB1973A190};{F48CDB0C-A733-4163-8884-DCAA07CF69BF}</ProjectTypeGuids>
+    <Name>Coldun</Name>
+    <RootNamespace>Coldun</RootNamespace>
+    <DebuggerPort>5858</DebuggerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".npmignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\sql-connectionstring-builder.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="test\tests.js">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib" />
+    <Folder Include="test" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptIncludeComments>false</TypeScriptIncludeComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v11.0\TypeScript\Microsoft.TypeScript.targets" />
+</Project>
